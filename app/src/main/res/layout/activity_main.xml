@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clock_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorClockBackground">
+
+    <TextClock
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/clock_defaults"
+        android:textColor="@color/colorClock"
+        android:textSize="200sp" />
+
+    <SeekBar
+        android:id="@+id/seekBarBrightness"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="530dp"
+        android:layout_toStartOf="@+id/seekBarAlpha"
+        android:max="255"
+        android:progressTint="@color/colorSeekbarTint"
+        android:thumb="@drawable/ic_brightness_7_black_24dp"
+        android:visibility="gone" />
+
+    <SeekBar
+        android:id="@+id/seekBarAlpha"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="530dp"
+        android:max="255"
+        android:progressTint="@color/colorSeekbarTint"
+        android:thumb="@drawable/ic_invert_colors_black_24dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/next_alarm_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:text="@string/next_alarm"
+        android:textColor="@color/colorClock"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/alarm_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:contentDescription="@string/todo"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_access_alarm_black_40dp" />
+
+</RelativeLayout>

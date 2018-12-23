@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Nightcore</string>
+    <string name="clock_defaults">00:00</string>
+    <string name="alarm_dsc">Alarm clock image</string>
+    <string name="next_alarm"> - </string>
+    <string name="todo">TODO</string>
+</resources>
